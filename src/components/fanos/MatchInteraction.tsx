@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { Zap, Flame, Trophy } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-export default function MatchInteraction() {
+export default function MatchInteraction({ onAction }: { onAction: (xp: number) => void }) {
   const [activeTab, setActiveTab] = useState("live")
   
   return (
@@ -43,6 +43,7 @@ export default function MatchInteraction() {
           desc="The underdog is showing signs of a tactical pivot."
           action="BOOST BELIEF"
           color="yellow"
+          onClick={() => onAction(12)}
         />
         <InteractionCard 
           icon={<Flame className="w-4 h-4 text-orange-500" />}
@@ -50,6 +51,7 @@ export default function MatchInteraction() {
           desc="High intensity detected in the final sector."
           action="CHANNEL ENERGY"
           color="orange"
+          onClick={() => onAction(25)}
         />
         <InteractionCard 
           icon={<Trophy className="w-4 h-4 text-cyan-400" />}
@@ -57,13 +59,14 @@ export default function MatchInteraction() {
           desc="82% likelihood of a historical comeback."
           action="PLEDGE LOYALTY"
           color="cyan"
+          onClick={() => onAction(50)}
         />
       </div>
     </div>
   )
 }
 
-function InteractionCard({ icon, title, desc, action, color }: any) {
+function InteractionCard({ icon, title, desc, action, color, onClick }: any) {
   const colorMap: any = {
     yellow: "hover:border-yellow-500/30 hover:bg-yellow-500/5",
     orange: "hover:border-orange-500/30 hover:bg-orange-500/5",
@@ -74,6 +77,7 @@ function InteractionCard({ icon, title, desc, action, color }: any) {
     <motion.div 
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
+      onClick={onClick}
       className={cn(
         "p-4 rounded-2xl border border-white/5 bg-white/5 transition-all cursor-pointer group",
         colorMap[color]

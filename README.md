@@ -1,65 +1,63 @@
-# FanOS // The Future Operating System for Sports Fandom
+# ⚡ FANOS // NEURAL UPLINK v2.0.4
 
-FanOS is an AI-powered identity and progression system for sports fans. It transforms passive viewing into an immersive, cinematic, and addictive experience through AI-generated personas, emotional telemetry, and social rivalries.
+> **STATUS:** [SYNCHRONIZED]
+> **ENCRYPTION:** MIL-SPEC-X9
+> **PURPOSE:** TRANSCEND PASSIVE SPECTATORSHIP
 
-## 🚀 Tech Stack
+## 🌌 THE AWAKENING
+**FanOS** is not just a platform. It is a digital metamorphosis. Passive sports viewing is dead. We have replaced it with a cinematic, AI-powered neural HUD that transforms every match into a high-stakes psychological battleground. 
 
-- **Framework:** Next.js 15 (App Router)
-- **Styling:** TailwindCSS + Framer Motion
-- **AI:** Gemini 1.5 Flash (via @google/generative-ai)
-- **Backend:** Firebase (Firestore + Auth)
-- **Visualization:** Recharts
-- **Icons:** Lucide React
-- **Deployment:** Docker + Google Cloud Run
-
-## 🛠 Setup Instructions
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/samjohnoffl/apl2.git
-   cd apl2
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Configure Environment Variables:**
-   Create a `.env.local` file based on `.env.example` and fill in your Firebase and Gemini API credentials.
-
-4. **Run locally:**
-   ```bash
-   npm run dev
-   ```
-
-## 🐳 Docker & Deployment
-
-The project is optimized for Google Cloud Run.
-
-### 1. Build the Docker Image
-```bash
-docker build -t gcr.io/[PROJECT_ID]/fanos .
-```
-
-### 2. Push to Google Container Registry
-```bash
-docker push gcr.io/[PROJECT_ID]/fanos
-```
-
-### 3. Deploy to Cloud Run
-```bash
-gcloud run deploy fanos --image gcr.io/[PROJECT_ID]/fanos --platform managed
-```
-
-## ✨ Core Features
-
-- **AI Fan Identity:** Dynamic personas evolved by Gemini.
-- **Emotional Pulse:** Live visualization of crowd sentiment.
-- **Progression System:** XP, levels, and seasonal ranks.
-- **Fan Wrapped:** Shareable cinematic season summaries.
-- **Social Factions:** Align with Chaos, Tactical, or Underdog armies.
+Through **Gemini 1.5 Pro Telemetry**, we analyze your biological commitment, your tactical foresight, and your emotional resonance to evolve your digital identity from a mere observer to a **GRAND ORACLE**.
 
 ---
 
-Built for the Google Hackathon 2026.
+## 🛠 CORE SYSTEM MODULES
+
+### 🧠 AI NEURAL ARCHETYPE (GENESIS)
+Your identity is fluid. Gemini tracks your interaction patterns—whether you favor the underdog or analyze tactical defensive pivots—and evolves your **Aura**. Level up your Hype, refine your Predictions, and maintain your Streak to reach Legendary status.
+
+### 💓 EMOTIONAL PULSE // KINETIC TELEMETRY
+Visualize the collective psyche of the crowd. Our real-time Recharts-powered pulse detects panic thresholds, momentum shifts, and glorious belief surges. 
+
+### ⚔️ GLOBAL FACTION WARS
+Align with the **Chaos Believers**, **Tactical Minds**, or the **Underdog Army**. Every interaction adds XP to your faction's global dominance. The leaderboard is live. The stakes are everything.
+
+### 🎞 FAN WRAPPED // CINEMATIC RECALL
+At the end of the season, witness your evolution in a high-fidelity cinematic summary. Your stats, your glory, your descent into madness—all captured in a shareable neural wrap.
+
+---
+
+## 🚀 DEPLOYMENT PROTOCOLS
+
+### 1. CLONE THE FREQUENCY
+```bash
+git clone https://github.com/samjohnoffl/apl2.git
+cd apl2
+```
+
+### 2. INJECT DEPENDENCIES
+```bash
+npm install
+```
+
+### 3. AUTHENTICATE UPLINK
+Create a `.env.local` file. Insert your Gemini and Firebase credentials. Without them, the system remains dormant.
+
+### 4. IGNITE
+```bash
+npm run dev
+```
+
+---
+
+## 🐳 CLOUD RUN // DISTRIBUTED INTELLIGENCE
+Optimized for zero-latency execution on **Google Cloud Run**. 
+Fully Dockerized. 
+Always active. 
+Watching.
+
+---
+
+**[WARNING]** *Extended use of FanOS may result in extreme emotional attachment to athletes and an inability to watch sports without a neural HUD.*
+
+**BUILT FOR THE 2026 GOOGLE AGENTIC HACKATHON // AGENTIC PREMIER LEAGUE.**
