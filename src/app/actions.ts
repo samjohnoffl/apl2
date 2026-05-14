@@ -4,9 +4,13 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
 
+export const getGeminiModel = (modelName = "gemini-1.5-flash-latest") => {
+  return genAI.getGenerativeModel({ model: modelName });
+};
+
 export async function generateInsight(context: string) {
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = getGeminiModel("gemini-1.5-flash-latest");
     const prompt = `You are the FanOS AI, a futuristic sports analyst. 
     Context: ${context}
     Generate a short, cinematic, 1-2 sentence tactical insight for a sports fan. 
@@ -24,7 +28,7 @@ export async function generateInsight(context: string) {
 
 export async function evolveIdentity(currentRank: string) {
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
     const prompt = `Current Fan Rank: ${currentRank}. 
     Generate a new, cooler sounding futuristic rank name and a 1-sentence evolution message.
     Return as JSON: { "rank": "...", "message": "..." }`;
