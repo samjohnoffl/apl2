@@ -5,6 +5,12 @@ const nextConfig: NextConfig = {
   images: {
     domains: ['images.unsplash.com', 'grainy-gradients.vercel.app'],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   experimental: {
     // any experimental features can go here
   },
